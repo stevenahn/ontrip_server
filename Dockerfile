@@ -3,7 +3,7 @@ FROM node:lts
 
 WORKDIR /app
 COPY ./app .
-RUN npm install
+RUN yarn install
 
 EXPOSE 3001
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
