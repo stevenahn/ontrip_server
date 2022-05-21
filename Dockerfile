@@ -2,7 +2,7 @@
 FROM node:lts
 
 WORKDIR /app
-COPY ./web .
+COPY ./app .
 RUN yarn install
 RUN yarn build
 
